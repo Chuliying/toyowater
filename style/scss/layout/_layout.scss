@@ -1,0 +1,101 @@
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: $font;
+}
+
+p{
+    line-height: 1.55em;
+}
+
+.header{
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    >div{
+        position: relative;
+        display: flex;
+    }
+    .logo{
+        width: 90px;
+        img{
+            width: 100%;
+        }
+    }
+
+    .nav{
+        margin-left: 50px;
+        a{
+            &:last-child{
+                li{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+        li{
+            padding: 15px 25px;
+            display: inline-block;
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+
+            &:after{
+                content: "";
+                margin: 10px;
+                border: solid 1px $brand;
+                border-radius: 100%;
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                right: -17px;
+                top: 50%;
+                margin-top: -8px;
+            }
+
+            p{
+                padding: 0;
+                margin: 0;
+                margin-top: 7px;
+                color: #aaa;
+                font-size: 16px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .fixed-top-btn{
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+}
+
+.action-btn{
+    border: solid 2px $action;
+    color: $action;
+    border-radius: 35px;
+    padding: 15px 35px;
+    text-align: center;
+    transition: all 0.35s;
+    cursor: pointer;
+    &:hover{
+        background: $action;
+        color: #fff;
+        i{
+            color: #fff;
+        }
+    }
+    i{
+        color: $action;
+        margin-right: 10px;
+        transition: all 0.35s;
+    }
+}
