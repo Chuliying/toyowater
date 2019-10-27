@@ -8,13 +8,18 @@
         content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <link rel="shortcut icon" href="http://www.toyo-autech.com.tw/favicon.ico" sizes="32x32" type="image/png" />
     <link rel="stylesheet" href="./style/css/main.css">
+    <link rel="stylesheet" href="./style/css/vendor.css">
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/imageloaded.js"></script>
+    <script src="js/blotter.min.js"></script>
+    <script src="js/materials/LiquidDistortMaterial.js"></script>
     <script src="./js/main.js"></script>
-    <meta property="og:title" content="議員衝啥毀!?">
+    <script src="./js/index.js"></script>
+    <meta property="og:title" content="">
     <meta property="og:description" content="">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
+
 </head>
 
 <body>
@@ -27,17 +32,17 @@
                 <ul>
                     <a href="#">
                         <li>
-                            關於 TOYO
+                            企業情報
                             <p class="eng">
-                                About Us
+                                ABOUT TOYO
                             </p>
                         </li>
                     </a>
                     <a href="#">
                         <li>
-                            產品導覽
+                            產品情報
                             <p class="eng">
-                                Product
+                                PRODUCTS
                             </p>
                         </li>
                     </a>
@@ -51,9 +56,9 @@
                     </a>
                     <a href="#">
                         <li>
-                            加入經銷商
+                            店舖一覽
                             <p class="eng">
-                                Join Us
+                                SHOPS
                             </p>
                         </li>
                     </a>
@@ -62,16 +67,471 @@
 
             <div class="fixed-top-btn">
                 <div class="action-btn">
-                        <i class="far fa-shopping-cart"></i> 線上購買
+                    <i class="far fa-shopping-cart"></i> 線上購買
                 </div>
             </div>
         </div>
     </div>
     <div class="main">
-
+        <div class="kv">
+            <div class="main-container">
+                <h1>
+                    日本からの健康に良い水<br><br>
+                    讓全家更健康<br>
+                    鹼性離子水生成器
+                </h1>
+                <p>
+                    健康。美容。環境友善 
+                </p>
+            </div>
+            <div class="mouse">
+                <div class="scroll"></div>
+            </div>
+        </div>
+        <div class="wave-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#4171aa" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#78cbc5" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#cccccc" />
+                </g>
+            </svg>
+        </div>
+        <div class="main-container index-about invisible">
+            <h2>
+                不只是淨水
+            </h2>
+            <h4>
+                更是你的家庭守護者
+            </h4>
+            <div class="circle-container">
+                <div class="circle">
+                    <div class="elemental active">
+                        <i class="fal fa-bolt"></i>
+                    </div>
+                    <div class="elemental">
+                        <i class="far fa-chart-network"></i>
+                    </div>
+                    <div class="elemental">
+                        <i class="far fa-stars"></i>
+                    </div>
+                    <div class="elemental">
+                        <i class="far fa-dewpoint"></i>
+                    </div>
+                    <div class="elemental">
+                        <i class="fal fa-atom-alt"></i>
+                    </div>
+                    <div class="elemental">
+                        <i class="far fa-h2"></i>
+                    </div>
+                    <div class="circle-inside">
+                        <ul>
+                            <li class="invisible show">
+                                <div class="title">
+                                    含負電位
+                                </div>
+                                <i class="fal fa-bolt"></i>
+                                <p>
+                                    即氧化還元電位<br>有助於中和體內自由基
+                                </p>
+                            </li>
+                            <li class="invisible">
+                                <div class="title">
+                                    水分子團小
+                                </div>
+                                <i class="far fa-chart-network"></i>
+                                <p>
+                                    滲透性高，<br>能快速吸收
+                                </p>
+                            </li>
+                            <li class="invisible">
+                                <div class="title">
+                                    多重潔淨
+                                </div>
+                                <i class="far fa-stars"></i>
+                                <p>
+                                    水中不含雜質、重金屬及<br>其他污染，口感極佳 
+                                </p>
+                            </li>
+                            <li class="invisible">
+                                <div class="title">
+                                    水呈鹼性
+                                </div>
+                                <i class="far fa-dewpoint"></i>
+                                <p>
+                                    pH值呈現弱鹼性，<br>幫助調整體質
+                                </p>
+                            </li>
+                            <li class="invisible">
+                                <div class="title">
+                                    含礦物質
+                                </div>
+                                <i class="fal fa-atom-alt"></i>
+                                <p>
+                                    礦物質離子化，<br>易於人體吸收
+                                </p>
+                            </li>
+                            <li class="invisible">
+                                <div class="title">
+                                    富含氫分子
+                                </div>
+                                <i class="far fa-h2"></i>
+                                <p>
+                                    水中氫分子能中和<br>體內過多的活性氧
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="about.html">
+                <div class="action-btn">
+                    了解更多
+                </div>
+            </a>
+        </div>
+        <div class="main-container">
+            <div class="main-title">
+                <div class="title">
+                    產品情報
+                </div>
+                <div class="eng" id="product-title">Products</div>
+                <i class="fas fa-tint"></i>
+            </div>
+            <div class="main-box product-box">
+                <ul>
+                    <li class="active">
+                        鹼性離子水生成器
+                    </li>
+                    <li>
+                        生飲淨水器
+                    </li>
+                    <li>
+                        居家凈水
+                    </li>
+                    <li>
+                        濾心耗材
+                    </li>
+                    <li>
+                        其他商品
+                    </li>
+                </ul>
+                <div class="flex-box">
+                    <div class="each-product flex-3">
+                        <img src="images/2x/img-01.png" alt="">
+                        <div class="title">
+                            桌上型還元水素水生成器 TW-H1
+                        </div>
+                        <p>
+                            NT 33,600
+                        </p>
+                    </div>
+                    <div class="each-product flex-3">
+                        <img src="images/2x/img-01.png" alt="">
+                        <div class="title">
+                            桌上型還元水素水生成器 TW-H1
+                        </div>
+                        <p>
+                            NT 33,600
+                        </p>
+                    </div>
+                    <div class="each-product flex-3">
+                        <img src="images/2x/img-01.png" alt="">
+                        <div class="title">
+                            桌上型還元水素水生成器 TW-H1
+                        </div>
+                        <p>
+                            NT 33,600
+                        </p>
+                    </div>
+                </div>
+                <div class="action-btn reverse-action-btn">店舖一覽</div>
+                <div class="action-btn">商品一覽</div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="left-box">
+                <h2 class="eng">
+                    TOYO, A Healthy Choice For Family
+                </h2>
+                <p>
+                    TOYO東洋歐帝克致力於打造舒適的質感生活，為用戶帶來健康又安全的飲水保健系列商品。
+                </p>
+                <div class="flex-box flex-space-between">
+                    <div class="awards">
+                        <img src="images/SVG/about-1.svg" alt="">
+                        <p>
+                            服務經銷據點超過50個
+                        </p>
+                    </div>
+                    <div class="awards">
+                        <img src="images/SVG/about-2.svg" alt="">
+                        <p>
+                            服務累計超過16萬戶
+                        </p>
+                    </div>
+                    <div class="awards">
+                        <img src="images/SVG/about-3.svg" alt="">
+                        <p>
+                            日本製造技術63年
+                        </p>
+                    </div>
+                    <div class="awards">
+                        <img src="images/SVG/about-4.svg" alt="">
+                        <p>
+                            台灣在地服務25年
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="left-box right-box">
+                <h2>
+                    我們提供的不只是商品
+                </h2>
+                <p>
+                    持續的維護保養，才能使商品使用的更久，讓我們為您的生活品質把關，也為地球盡一份心力
+                </p>
+                <div class="flex-box flex-space-between">
+                    <div class="service">
+                        <i class="far fa-home"></i>
+                        <p>
+                            用水免費諮詢
+                        </p>
+                    </div>
+                    <div class="service">
+                        <i class="far fa-comments-dollar"></i>
+                        <p>
+                            客製化預算規劃
+                        </p>
+                    </div>
+                    <div class="service">
+                        <i class="far fa-alarm-clock"></i>
+                        <p>
+                            濾心更換提醒
+                        </p>
+                    </div>
+                    <div class="service">
+                        <i class="far fa-tools"></i>
+                        <p>
+                            保養維修服務
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-title">
+                <div class="title">
+                    最新消息
+                </div>
+                <div class="eng" id="news-title">News</div>
+                <i class="fas fa-tint"></i>
+            </div>
+            <div class="flex-box">
+                <div class="flex-2">
+                    <a href="#">
+                        <div class="main-box news-box">
+                            <img src="images/2x/news-01.png" alt="">
+                            <p class="time">06.21.2019</p>
+                            <div class="title">
+                                全新機種 - TOYO還元水素水生成器 - 上市囉！！
+                            </div>
+                            <p class="description">【好水世家新登場的神秘人物是誰!!!?】全新機種 - TOYO還元水素水生成器 - 正式開賣啦～ 一機滿足全家人的需求！</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-2">
+                    <a href="#">
+                        <div class="main-box news-box">
+                            <img src="images/2x/news-01.png" alt="">
+                            <p class="time">06.21.2019</p>
+                            <div class="title">
+                                全新機種 - TOYO還元水素水生成器 - 上市囉！！
+                            </div>
+                            <p class="description">【好水世家新登場的神秘人物是誰!!!?】全新機種 - TOYO還元水素水生成器 - 正式開賣啦～ 一機滿足全家人的需求！</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="#">
+                <div class="action-btn">
+                    看更多最新消息
+                </div>
+            </a>
+        </div>
     </div>
     <div class="footer">
+        <div class="main-container">
+            <div class="footer-header">
+                <div class="logo"><img src="images/SVG/logo-w.svg" alt=""></div>
+                <div class="slogan">
+                    讓全家更健康，鹼性離子水生成器。
+                </div>
+            </div>
+            <div class="footer-body">
+                <div class="sitemap">
+                    <ul>
+                        <a href="about.html">
+                            <li>
+                                企業情報
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li>
+                                關於TOYO
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li>
+                                特點介紹
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li>
+                                聯絡我們
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li>
+                                成為供應商
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="products.html">
+                            <li>
+                                企業情報
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li>
+                                關於TOYO
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li>
+                                特點介紹
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li>
+                                聯絡我們
+                            </li>
+                        </a>
+                        <a href="about.html">
+                            <li>
+                                成為供應商
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="products.html">
+                            <li>
+                                商品情報
+                            </li>
+                        </a>
+                        <a href="products.html">
+                            <li>
+                                鹼性離子水生成器
+                            </li>
+                        </a>
+                        <a href="products.html">
+                            <li>
+                                生飲淨水器
+                            </li>
+                        </a>
+                        <a href="products.html">
+                            <li>
+                                居家凈水
+                            </li>
+                        </a>
+                        <a href="products.html">
+                            <li>
+                                濾心耗材
+                            </li>
+                        </a>
+                        <a href="products.html">
+                            <li>
+                                其他商品
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="qa.html">
+                            <li>
+                                常見問題
+                            </li>
+                        </a>
+                        <a href="qa.html">
+                            <li>
+                                操作手冊
+                            </li>
+                        </a>
+                        <a href="qa.html">
+                            <li>
+                                資源專區
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="shops.html">
+                            <li>
+                                店舖一覽
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="news.html">
+                            <li>
+                                最新消息
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <a href="#" target="_blank">
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </a>
+                        <a href="#" target="_blank">
+                            <li>
+                                <i class="fab fa-instagram"></i>
+                            </li>
+                        </a>
+                        <a href="#" target="_blank">
+                            <li>
+                                <i class="fab fa-line"></i>
+                            </li>
+                        </a>
+                        <a href="#" target="_blank">
+                            <li>
+                                <i class="far fa-shopping-cart"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="info">
+                    <p>
+                        地址：桃園市桃園區經國路11號6樓之1
+                    </p>
+                    <p>
+                        免付費電話：0800-090881 手機請撥 03-3576268.
+                    </p>
+                    <p>
+                        copyright © 2019 TOYO東洋歐帝克股份有限公司. All rights reserved.
 
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
