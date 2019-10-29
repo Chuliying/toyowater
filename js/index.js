@@ -36,7 +36,7 @@ $(document).ready(function () {
         var nonScroll = $('.wave-container').hasClass("show");
         if (!nonScroll){
             $(window).unbind('scroll');
-            //$('.header').addClass('header-bg');
+            $('.header').addClass('header-bg');
             $('.wave-container, .index-about').addClass('show');
 
             var _position = $(window).height();
