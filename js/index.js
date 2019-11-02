@@ -1,36 +1,6 @@
 $(document).ready(function () {
     var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 
-    var size = 36;
-    var uniformValue = 0.025;
-    var text = new Blotter.Text("Products", {
-        family: "lato",
-        size: size,
-        fill: "#666666"
-    });
-    var text2 = new Blotter.Text("News", {
-        family: "lato",
-        size: size,
-        fill: "#666666"
-    });
-
-    var material = new Blotter.LiquidDistortMaterial();
-    Blotter.Text.padding = 100;
-    material.uniforms.uSpeed.value = 0.75;
-    material.uniforms.uVolatility.value = uniformValue;
-    material.uniforms.uSeed.value = 1;
-    material.needsUpdate = true;
-    var blotter = new Blotter(material, { texts: text });
-    blotter.needsUpdate = true;
-    var scope = blotter.forText(text);
-    var $container = document.getElementById("product-title");
-    scope.appendTo($container);
-
-    var blotter2 = new Blotter(material, { texts: text2 });
-    var scope2 = blotter2.forText(text2);
-    var $container2 = document.getElementById("news-title");
-    scope2.appendTo($container2);
-
     $(window).on('scroll', firstView);
     var $waveContainer = $('.wave-container');
     var $header = $('.header');
@@ -43,14 +13,13 @@ $(document).ready(function () {
             //$(window).unbind('scroll');
             $('.wave-container, .index-about').addClass('show');
 
-            var _position = $(window).height();
+            var position = $(window).height();
 
             $body.animate({
-                scrollTop: _position
+                scrollTop: position
             }, 800);
         }
 
-        // header 
        
 
 
@@ -65,7 +34,6 @@ $(document).ready(function () {
         }
 
         higherWave();
-        uniformsV();
     }
     var $wave = $('.waves');
     function higherWave(){
@@ -74,19 +42,6 @@ $(document).ready(function () {
             $wave.removeClass('higher');
         },300)
     }
-
-   function uniformsV(){
-    if (!trigger ){
-        var trigger = true;
-        scope.material.uniforms.uVolatility.value = 0.045;
-    }
-    
-   
-       setTimeout(function(){
-        trigger = false;
-        scope.material.uniforms.uVolatility.value = 0.025;
-    },300)
-   } 
 
     var $elemental = $('.elemental');
     var $circleInfo = $('.circle-inside').find('li');

@@ -84,7 +84,7 @@
 
 .index-about {
   text-align: center;
-  color: #fff;
+  color: $font;
   padding-top: 120px;
 
   h2 {
@@ -97,6 +97,7 @@
     font-size: 19.5px;
     letter-spacing: 2.5px;
     font-weight: normal;
+    margin-top: -10px;
   }
 }
 

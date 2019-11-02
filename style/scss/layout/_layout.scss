@@ -24,6 +24,7 @@ p {
 }
 .header {
   padding: 10px 25px;
+  padding-bottom: 5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +38,9 @@ p {
     display: flex;
   }
   .logo {
-    height: 70px;
+    height: 75px;
+    margin-top: -10px;
+    margin-bottom: -5px;
     img {
       height: 100%;
     }
@@ -60,14 +63,17 @@ p {
       list-style: none;
       text-align: center;
       font-size: 18px;
-      font-weight: bold;
+      font-weight: normal;
       position: relative;
       color: $font;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 17px;
 
       .eng {
         font-size: 12px;
-        color: $lfont
-        ;
+        color: $lfont;
+        margin-top: 3px;
       }
 
       &:after {
@@ -98,6 +104,8 @@ p {
     position: absolute;
     right: 0px;
     top: 15px;
+    right: 0;
+    top: 0px;
     .action-btn{
       background: $brand;
       border-color: $brand;
@@ -110,25 +118,8 @@ p {
 
 .header-bg{
     background: rgba(255, 255, 255, 1);
-    border-bottom: solid 1px #eee;
+    //border-bottom: solid 1px #eee;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    .logo{
-      height: 50px;
-    }
-    .nav li{
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 16px;
-        .eng{
-            font-size: 14px;
-            margin-top: 3px;
-        }
-    }
-
-    .fixed-top-btn{
-        right: 0;
-        top: 0px;
-    }
 }
 .action-btn {
   border: solid 2px $action;
@@ -322,7 +313,7 @@ h1 {
     transform: translateY(600px);
     transition: all 3s;
     &.show{
-        opacity: 1;
+        opacity: 0.55;
         transform: translateY(0px);
     }
     &:after{
@@ -465,6 +456,7 @@ h1 {
 .left-box,.right-box{
     text-align: left;
     padding: 25px;
+    padding-bottom: 45px;
     h2{
         color: $brand;
         font-size: 32px;
@@ -473,7 +465,7 @@ h1 {
         margin-bottom: 25px;
     }
     p{
-        max-width: 460px;
+        max-width: 500px;
         font-size: 18px;
         color: $lfont;
     }
@@ -544,4 +536,104 @@ hr{
     border: none;
     border-top: solid 1px #ccc;
     margin: 45px auto;
+}
+
+.about-first{
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 60px;
+  p{
+    font-size: 18px;
+    line-height: 1.75em;
+  }
+}
+
+.ino-water{
+  margin-top: 60px;
+  .flex-2 > div{
+    position: relative;
+    padding-left: 105px;
+    margin-bottom: 25px;
+    i{
+      position: absolute;
+      left: 0px;
+      border: solid 2px $brand;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      line-height: 76px;
+      border-radius: 100%;
+      color: $brand;
+      font-size: 32px;
+    }
+
+    p{
+      margin-top: 10px;
+    }
+
+    .title{
+      padding-top: 5px;
+      color: $brand;
+      font-size: 21px;
+    }
+  } 
+}
+
+.ph-box{
+  margin-top: 60px;
+  ul{
+    text-align: left;
+    li{
+      position: relative;
+      padding-left: 115px;
+      padding-right: 35px;
+      padding-bottom: 25px;
+      min-height: 80px;
+      &:last-child{
+        .pH{
+          &:after{
+            display: none;
+          }
+        }
+      }
+      .pH{
+        position: absolute;
+        color: $brand;
+        left: 0;
+        background:$brand;
+        color: #fff;
+        box-shadow: 0px 0px 25px rgba(0,0,0,0.15);
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 14px;
+        &:after{
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          height: 150px;
+          border-left: dashed 1px $brand;
+          z-index: -1;
+        }
+        h5{
+          font-size: 21px;
+          margin-top: 3px;
+        }
+      }
+
+      .title{
+        color: $brand;
+        font-size: 20px;
+        padding-top: 20px;
+      }
+
+      p{
+        color: $lfont;
+      }
+    }
+  }
 }
