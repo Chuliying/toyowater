@@ -5,6 +5,9 @@ $(document).ready(function () {
     var $waveContainer = $('.wave-container');
     var $header = $('.header');
     var $kv = $('.kv');
+    var _wh = $(window).height();
+
+    $kv.css("height",_wh);
 
     function firstView() {
         var nonScroll = $('.wave-container').hasClass("show");

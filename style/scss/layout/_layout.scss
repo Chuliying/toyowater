@@ -551,7 +551,7 @@ h1 {
     &.higher {
       height: 180px;
       @media (max-width:$xs) {
-        height: 120px;
+        height: 60px;
       }
     }
   }
