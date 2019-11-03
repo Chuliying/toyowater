@@ -9,12 +9,11 @@ $(document).ready(function () {
     function firstView() {
         var nonScroll = $('.wave-container').hasClass("show");
         var _position = document.documentElement.scrollTop || document.body.scrollTop;
-        if (!nonScroll && _position<350) {
+        if (!nonScroll && _position<50) {
             //$(window).unbind('scroll');
             $('.wave-container, .index-about').addClass('show');
 
             var position = $(window).height();
-
             $body.animate({
                 scrollTop: position
             }, 800);

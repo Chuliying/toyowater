@@ -178,16 +178,21 @@
 
     class BlotterEl {
         constructor(el, options) {
+            const _windowWidth = window.innerWidth;
+            let _size = 42;
+            if(_windowWidth<776){
+                _size = 32;
+            }
             this.DOM = {el: el};
             this.DOM.textEl = this.DOM.el.querySelector('span.content__text-inner');
             this.style = {
                 family : "Lato ,sans-serif",
-                size : 52,
+                size : _size,
                 paddingLeft: 40,
                 paddingRight: 40,
                 paddingTop: 10,
                 paddingBottom: 40,
-                fill : "#444444"
+                fill : "#466372"
             };
             console.log(this.DOM.textEl);
             Object.assign(this.style, options.style);

@@ -1,11 +1,11 @@
 $( document ).ready(function() {
     var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-    var $hamburger = $('#hamburger-icon');
-    var $menulist  = $('.menu-list');
+    var $hamburger = $('.hamburger');
+    var $menu  = $('.menu');
     
     $hamburger.click(function() {
-        $hamburger.toggleClass('active');
-        $menulist.toggleClass('active');
+        $hamburger.toggleClass('is-active');
+        $menu.fadeToggle(300);
         return false;
     });
     
@@ -21,4 +21,50 @@ $( document ).ready(function() {
             scrollTop: _position - 35
         }, 1000);
     })
+
+    
+    var $waveContainer = $('.wave-container');
+    var $header = $('.header');
+    var $kv = $('.kv');
+    var index = $('#index');
+    if(index.length < 1){
+        $waveContainer.addClass("show");
+    }
+
+    // function firstView() {
+    //     var nonScroll = $('.wave-container').hasClass("show");
+    //     var _position = document.documentElement.scrollTop || document.body.scrollTop;
+    //     if (!nonScroll && _position<350) {
+    //         //$(window).unbind('scroll');
+    //         $('.wave-container, .index-about').addClass('show');
+    //     }
+
+       
+
+
+    //     if (_position < 250) {
+    //         $header.removeClass('header-bg');
+    //     }
+    //     else {
+    //         $('.wave-container, .index-about').addClass('show');
+    //         $header.addClass('header-bg');
+    //     }
+
+    //     higherWave();
+    // }
+    var $wave = $('.waves');
+    $(window).on('scroll', higherWave);
+    function higherWave(){
+        var _position = document.documentElement.scrollTop || document.body.scrollTop;
+        if (_position> 100){
+            $header.addClass('header-bg');
+        }
+        else{
+            $header.removeClass('header-bg');
+        }
+        $wave.addClass('higher');
+        setTimeout(function(){
+            $wave.removeClass('higher');
+        },300)
+    }
 });
