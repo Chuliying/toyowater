@@ -2182,14 +2182,14 @@ p { line-height: 1.55em; }
 
 .header-bg { background: white; background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0.85) 100%); }
 
-.action-btn { border: solid 2px #006c57; background: #006c57; color: #fff; display: inline-block; letter-spacing: 1px; border-radius: 35px; padding: 15px 35px; text-align: center; transition: all 0.35s; cursor: pointer; }
+.action-btn { border: solid 2px #00a680; background: #00a680; color: #fff; display: inline-block; letter-spacing: 1px; border-radius: 35px; padding: 15px 35px; text-align: center; transition: all 0.35s; cursor: pointer; }
 @media (max-width: 767px) { .action-btn { padding: 10px 25px; font-size: 16px; } }
-.action-btn:hover { background: transparent; color: #006c57; }
-.action-btn:hover i { color: #006c57; }
+.action-btn:hover { background: transparent; color: #00a680; }
+.action-btn:hover i { color: #00a680; }
 .action-btn i { color: #fff; margin-right: 10px; transition: all 0.35s; }
 
-.reverse-action-btn { background: transparent; color: #006c57; }
-.reverse-action-btn:hover { color: #fff; background: #006c57; }
+.reverse-action-btn { background: transparent; color: #00a680; }
+.reverse-action-btn:hover { color: #fff; background: #00a680; }
 
 .main-container { max-width: 1280px; margin: auto; margin-bottom: 45px; padding: 25px; text-align: center; }
 @media (max-width: 767px) { .main-container { padding: 15px; margin-bottom: 25px; } }
