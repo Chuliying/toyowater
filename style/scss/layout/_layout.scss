@@ -438,7 +438,6 @@ h1 {
             font-size: 17px;
         }
     }
-
     .flex-4{
         width: 25%;
     }
@@ -450,6 +449,13 @@ h1 {
     .flex-2{
         width: 50%;
         padding: 15px;
+    }
+
+    .flex-2,.flex-4,.flex-3{
+      @media (max-width:$xs) {
+        width: 100%;
+        text-align: center;
+      }
     }
 }
 
@@ -635,5 +641,47 @@ hr{
         color: $lfont;
       }
     }
+  }
+}
+
+.contact-box{
+  text-align: left;
+  border-radius: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  .name{
+    color: $brand;
+    font-size: 21px;
+    padding-top: 10px;
+  }
+
+  hr{
+    margin: 25px auto;
+  }
+
+  p{
+    i{
+      margin-right: 10px;
+    }
+  }
+
+  .social{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    li{
+      display: inline-block;
+      font-size: 18px;
+      i{
+        font-size: 26px;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.join-us{
+  padding-bottom: 60px;
+  p{
+    font-size: 18px;
   }
 }

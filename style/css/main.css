@@ -2230,6 +2230,7 @@ h1 { font-size: 32px; }
 .flex-box .flex-4 { width: 25%; }
 .flex-box .flex-3 { width: 33.3333333%; }
 .flex-box .flex-2 { width: 50%; padding: 15px; }
+@media (max-width: 767px) { .flex-box .flex-2, .flex-box .flex-4, .flex-box .flex-3 { width: 100%; text-align: center; } }
 
 .left-box, .right-box { text-align: left; padding: 25px; padding-bottom: 45px; }
 .left-box h2, .right-box h2 { color: #00a680; font-size: 32px; font-weight: normal; letter-spacing: 1px; margin-bottom: 25px; }
@@ -2273,6 +2274,17 @@ hr { border: none; border-top: solid 1px #ccc; margin: 45px auto; }
 .ph-box ul li .pH h5 { font-size: 21px; margin-top: 3px; }
 .ph-box ul li .title { color: #00a680; font-size: 20px; padding-top: 20px; }
 .ph-box ul li p { color: #808080; }
+
+.contact-box { text-align: left; border-radius: 10px; padding-left: 35px; padding-right: 35px; }
+.contact-box .name { color: #00a680; font-size: 21px; padding-top: 10px; }
+.contact-box hr { margin: 25px auto; }
+.contact-box p i { margin-right: 10px; }
+.contact-box .social { padding-top: 15px; padding-bottom: 15px; }
+.contact-box .social li { display: inline-block; font-size: 18px; }
+.contact-box .social li i { font-size: 26px; margin-right: 15px; }
+
+.join-us { padding-bottom: 60px; }
+.join-us p { font-size: 18px; }
 
 #hamburger-icon { width: 30px; height: 17px; position: fixed; display: block; right: 40px; top: 40px; z-index: 100; }
 @media (max-width: 767px) { #hamburger-icon { top: 15px; right: 15px; transform: scale(0.85); } }
