@@ -2430,7 +2430,7 @@ hr { border: none; border-top: solid 1px #ccc; margin: 45px auto; }
 .circle-container .circle-inside ul li .title { font-size: 28px; padding-top: 25px; }
 @media (max-width: 767px) { .circle-container .circle-inside ul li .title { font-size: 17px; } }
 .circle-container .circle-inside ul li i { color: #00a680; font-size: 110px; margin-top: 70px; margin-bottom: 50px; }
-@media (max-width: 767px) { .circle-container .circle-inside ul li i { display: none; } }
+@media (max-width: 767px) { .circle-container .circle-inside ul li i { font-size: 21px; margin-top: 25px; margin-bottom: 15px; } }
 .circle-container .circle-inside ul li p { padding: 0 25px; font-size: 20px; }
 @media (max-width: 767px) { .circle-container .circle-inside ul li p { font-size: 14px; } }
 @keyframes floating { 0% { transform: rotate(-2deg) translate(3px, 5px); }

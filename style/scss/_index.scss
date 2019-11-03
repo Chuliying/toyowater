@@ -248,7 +248,9 @@
           margin-top: 70px;
           margin-bottom: 50px;
           @media (max-width:$xs) {
-            display: none;
+            font-size: 21px;
+            margin-top: 25px;
+            margin-bottom: 15px;
           }
         }
         p {
