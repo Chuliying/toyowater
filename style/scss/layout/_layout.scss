@@ -614,6 +614,13 @@ h1 {
   background: #fff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
 
+  h5{
+    font-size: 21px;
+    color: $brand;
+    margin: 10px auto;
+    font-weight: normal;
+  }
+
   @media (max-width:$xs) {
     padding: 15px;
     border-radius: 5px;
@@ -1123,5 +1130,112 @@ hr {
         }
       }
     }
+  }
+}
+
+.product-container{
+  padding:15px;
+  padding-top: 140px;
+  max-width: 800px;
+  margin: auto;
+  .product-main{
+    font-size: 17px;
+    margin-bottom: 60px;
+    .name{
+      margin-top: 25px;
+      font-size: 32px;
+      color: $brand;
+    }
+    p{
+      color: $lfont;
+    }
+    .detail{
+      padding-top: 25px;
+      position: relative;
+      li{
+        padding-top: 10px;
+        a{
+          margin-left: 10px;
+        }
+      }
+      .ct{
+        position: absolute;
+        right: 0;
+        top: 35px;
+        text-align: right;
+        @media(max-width:$xs){
+          position: static;
+          text-align: left;
+          margin-top: 25px;
+        }
+        .price{
+          font-size: 24px;
+          color: $brand;
+          margin-bottom: 45px;
+          @media(max-width:$xs){
+            margin-bottom: 25px;
+          }
+        }
+
+        .action-btn{
+          background: #fff;
+          color: $brand;
+          display: table;
+          margin-bottom: 15px;
+          padding: 10px 25px;
+          margin-right: 0;
+          margin-left: auto;
+          @media(max-width:$xs){
+           display: inline-block;
+           margin: 5px;
+          }
+          i{
+            color: $brand;
+          }
+        }
+      }
+    }
+  }
+  img{
+    width: 100%;
+  }
+
+  table{
+    width: 100%;
+    margin: 25px auto;
+    border-bottom: solid 2px #f7f7f7;
+    tr{
+      width: 100%;
+      &:nth-child(odd){
+        td{
+          background: #f7f7f7;
+
+        }
+      }
+
+      td{
+        padding: 15px;
+        vertical-align: top;
+        line-height: 1.55em;
+        &:first-child{
+          width: 30%;
+        }
+      }
+    }
+  }
+
+  .main-box{
+    margin-bottom: 45px;
+  }
+ 
+}
+.flex-box-padding-reduce{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.align-center{
+  text-align: center;
+  .action-btn{
+    margin: 10px;
   }
 }

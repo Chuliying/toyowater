@@ -2256,6 +2256,7 @@ h1 { font-size: 32px; }
 .main-title .eng { margin: 15px auto 45px; font-size: 0px; letter-spacing: 1px; }
 
 .main-box { padding: 25px; border-radius: 15px; background: #fff; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15); }
+.main-box h5 { font-size: 21px; color: #00a680; margin: 10px auto; font-weight: normal; }
 @media (max-width: 767px) { .main-box { padding: 15px; border-radius: 5px; } }
 
 .product-box ul { text-align: left; margin-bottom: 60px; }
@@ -2359,6 +2360,33 @@ hr { border: none; border-top: solid 1px #ccc; margin: 45px auto; }
 @media (max-width: 767px) { .shop-list ul li .phone { width: 100%; background: #fff; border-bottom: dashed 1px #ccc; } }
 .shop-list ul li .address { margin-left: 28%; }
 @media (max-width: 767px) { .shop-list ul li .address { width: 100%; margin-left: 0; } }
+
+.product-container { padding: 15px; padding-top: 140px; max-width: 800px; margin: auto; }
+.product-container .product-main { font-size: 17px; margin-bottom: 60px; }
+.product-container .product-main .name { margin-top: 25px; font-size: 32px; color: #00a680; }
+.product-container .product-main p { color: #808080; }
+.product-container .product-main .detail { padding-top: 25px; position: relative; }
+.product-container .product-main .detail li { padding-top: 10px; }
+.product-container .product-main .detail li a { margin-left: 10px; }
+.product-container .product-main .detail .ct { position: absolute; right: 0; top: 35px; text-align: right; }
+@media (max-width: 767px) { .product-container .product-main .detail .ct { position: static; text-align: left; margin-top: 25px; } }
+.product-container .product-main .detail .ct .price { font-size: 24px; color: #00a680; margin-bottom: 45px; }
+@media (max-width: 767px) { .product-container .product-main .detail .ct .price { margin-bottom: 25px; } }
+.product-container .product-main .detail .ct .action-btn { background: #fff; color: #00a680; display: table; margin-bottom: 15px; padding: 10px 25px; margin-right: 0; margin-left: auto; }
+@media (max-width: 767px) { .product-container .product-main .detail .ct .action-btn { display: inline-block; margin: 5px; } }
+.product-container .product-main .detail .ct .action-btn i { color: #00a680; }
+.product-container img { width: 100%; }
+.product-container table { width: 100%; margin: 25px auto; border-bottom: solid 2px #f7f7f7; }
+.product-container table tr { width: 100%; }
+.product-container table tr:nth-child(odd) td { background: #f7f7f7; }
+.product-container table tr td { padding: 15px; vertical-align: top; line-height: 1.55em; }
+.product-container table tr td:first-child { width: 30%; }
+.product-container .main-box { margin-bottom: 45px; }
+
+.flex-box-padding-reduce { margin-left: -15px; margin-right: -15px; }
+
+.align-center { text-align: center; }
+.align-center .action-btn { margin: 10px; }
 
 #hamburger-icon { width: 30px; height: 17px; position: fixed; display: block; right: 40px; top: 40px; z-index: 100; }
 @media (max-width: 767px) { #hamburger-icon { top: 15px; right: 15px; transform: scale(0.85); } }
