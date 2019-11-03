@@ -164,6 +164,10 @@
     i {
       font-size: 36px;
       line-height: 80px;
+
+      @media (max-width:$xs) {
+        font-size: 14px;
+      }
     }
 
     &:nth-child(1) {
@@ -232,6 +236,10 @@
         .title {
           font-size: 28px;
           padding-top: 25px;
+
+          @media (max-width:$xs) {
+            font-size: 17px;
+          }
         }
 
         i {
@@ -239,10 +247,16 @@
           font-size: 110px;
           margin-top: 70px;
           margin-bottom: 50px;
+          @media (max-width:$xs) {
+            display: none;
+          }
         }
         p {
           padding: 0 25px;
           font-size: 20px;
+          @media (max-width:$xs) {
+            font-size: 14px;
+          }
         }
       }
     }
