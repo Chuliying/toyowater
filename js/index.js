@@ -16,10 +16,9 @@ $(document).ready(function () {
             //$(window).unbind('scroll');
             $('.wave-container, .index-about').addClass('show');
 
-            var position = $(window).height();
             $body.animate({
-                scrollTop: position
-            }, 800);
+                scrollTop: _wh
+            }, 400);
         }
 
        
