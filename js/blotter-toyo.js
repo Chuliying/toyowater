@@ -194,12 +194,12 @@
                 paddingBottom: 40,
                 fill : "#466372"
             };
-            console.log(this.DOM.textEl);
+            //console.log(this.DOM.textEl);
             Object.assign(this.style, options.style);
 
             this.material = new Material(options.type, options);
             this.text = new Blotter.Text(this.DOM.textEl.innerHTML, this.style);
-            console.log(this.text);
+            //console.log(this.text);
             this.blotter = new Blotter(this.material, {texts: this.text});
             this.scope = this.blotter.forText(this.text);
             this.DOM.el.removeChild(this.DOM.textEl);
@@ -207,7 +207,7 @@
 
             const observer = new IntersectionObserver(entries => entries.forEach(entry => this.scope[entry.isIntersecting ? 'play' : 'pause']()));
             observer.observe(this.scope.domElement);
-            console.log(this.text);
+            //console.log(this.text);
         }
     }
 

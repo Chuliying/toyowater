@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
 .eng,
 .lato {
@@ -12,7 +12,7 @@
 
 body {
   box-sizing: border-box;
-  font-family: 'Noto Sans TC', Microsoft JhengHei,sans-serif;
+  font-family: "Noto Sans TC", Microsoft JhengHei, sans-serif;
   color: $font;
 }
 
@@ -311,7 +311,7 @@ p {
   margin-bottom: 45px;
   padding: 25px;
   text-align: center;
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     padding: 15px;
     margin-bottom: 25px;
   }
@@ -521,7 +521,7 @@ h1 {
   opacity: 0;
   transform: translateY(600px);
   transition: all 1.5s;
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     padding-top: 60px;
     height: 140px;
   }
@@ -546,12 +546,12 @@ h1 {
     min-height: 100px;
     height: 150px;
     transition: height 0.3s;
-    @media (max-width:$xs) {
+    @media (max-width: $xs) {
       height: 60px;
     }
     &.higher {
       height: 180px;
-      @media (max-width:$xs) {
+      @media (max-width: $xs) {
         height: 60px;
       }
     }
@@ -615,14 +615,14 @@ h1 {
   background: #fff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
 
-  h5{
+  h5 {
     font-size: 21px;
     color: $brand;
     margin: 10px auto;
     font-weight: normal;
   }
 
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     padding: 15px;
     border-radius: 5px;
   }
@@ -639,6 +639,12 @@ h1 {
       font-size: 18px;
       border-bottom: solid 2px #ccc;
       cursor: pointer;
+
+      @media(max-width:$xs){
+        font-size: 16px;
+        padding: 10px 5px;
+        margin: 10px 5px;
+      }
     }
 
     .active {
@@ -687,7 +693,7 @@ h1 {
     width: 50%;
     padding: 15px;
 
-    @media (max-width:$xs) {
+    @media (max-width: $xs) {
       padding: 0px;
     }
   }
@@ -709,7 +715,7 @@ h1 {
   padding: 25px;
   padding-bottom: 45px;
 
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     padding: 15px;
   }
   h2 {
@@ -729,7 +735,7 @@ h1 {
 .right-box {
   text-align: right;
 
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     text-align: left;
   }
   p {
@@ -746,16 +752,16 @@ h1 {
   text-align: center;
   padding-top: 60px;
 
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     width: 50%;
     padding: 15px;
-    padding-top: 25px; 
+    padding-top: 25px;
   }
   img {
     max-width: 130px;
     margin-bottom: 25px;
 
-    @media (max-width:$xs) {
+    @media (max-width: $xs) {
       margin-bottom: 10px;
     }
   }
@@ -770,7 +776,7 @@ h1 {
   border-radius: 100%;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.09);
 
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     box-shadow: none;
     background: none;
     width: 50%;
@@ -813,7 +819,7 @@ hr {
   border-top: solid 1px #ccc;
   margin: 45px auto;
 
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     margin: 25px auto;
   }
 }
@@ -835,7 +841,7 @@ hr {
     position: relative;
     padding-left: 105px;
     margin-bottom: 25px;
-    @media (max-width:$xs) {
+    @media (max-width: $xs) {
       padding-left: 80px;
       text-align: left;
     }
@@ -851,7 +857,7 @@ hr {
       color: $brand;
       font-size: 32px;
 
-      @media (max-width:$xs) {
+      @media (max-width: $xs) {
         width: 60px;
         height: 60px;
         line-height: 56px;
@@ -861,8 +867,7 @@ hr {
 
     p {
       margin-top: 10px;
-      @media (max-width:$xs) {
-
+      @media (max-width: $xs) {
       }
     }
 
@@ -876,12 +881,15 @@ hr {
 
 .ph-box {
   margin-top: 60px;
-  .flex-2{
-    &:last-child {
-      li:nth-child(2){
-        .pH {
-          &:after {
-            height: 150px;
+  .flex-2 {
+    &:first-child {
+      @media (max-width:$xs) {
+        margin-bottom: 0;
+      }
+      li:nth-child(3) {
+        &:after {
+          @media (max-width:$xs) {
+            display: block;
           }
         }
       }
@@ -895,11 +903,18 @@ hr {
       padding-right: 35px;
       padding-bottom: 25px;
       min-height: 80px;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 39px;
+        top: 0%;
+        height: 100%;
+        border-left: dashed 1px $brand;
+        z-index: -1;
+      }
       &:last-child {
-        .pH {
-          &:after {
-            display: none;
-          }
+        &:after {
+          display: none;
         }
       }
       .pH {
@@ -913,24 +928,12 @@ hr {
         height: 80px;
         border-radius: 100%;
         text-align: center;
-        padding-top: 15px;
+        padding-top: 12px;
         font-size: 14px;
-        &:after {
-          content: "";
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          height: 150px;
-          border-left: dashed 1px $brand;
-          z-index: -1;
 
-          @media (max-width:$xs) {
-            height: 350px;
-          }
-        }
         h5 {
           font-size: 21px;
-          margin-top: 3px;
+          margin-top: 0px;
         }
       }
 
@@ -1085,7 +1088,7 @@ hr {
   margin: auto;
   padding-left: 45px;
   padding-right: 45px;
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -1098,7 +1101,7 @@ hr {
   ul {
     li {
       font-size: 0;
-      @media (max-width:$xs) {
+      @media (max-width: $xs) {
         margin-bottom: 15px;
       }
       > div {
@@ -1110,14 +1113,14 @@ hr {
       .name {
         width: 28%;
         background: #f7f7f7;
-        @media (max-width:$xs) {
+        @media (max-width: $xs) {
           width: 100%;
         }
       }
       .phone {
         width: 72%;
         background: #f7f7f7;
-        @media (max-width:$xs) {
+        @media (max-width: $xs) {
           width: 100%;
           background: #fff;
           border-bottom: dashed 1px #ccc;
@@ -1125,7 +1128,7 @@ hr {
       }
       .address {
         margin-left: 28%;
-        @media (max-width:$xs) {
+        @media (max-width: $xs) {
           width: 100%;
           margin-left: 0;
         }
@@ -1134,51 +1137,77 @@ hr {
   }
 }
 
-.product-container{
-  padding:15px;
+.product-container {
+  padding: 15px;
   padding-top: 140px;
   max-width: 800px;
   margin: auto;
-  .product-main{
+  .product-main {
     font-size: 17px;
     margin-bottom: 60px;
-    .name{
+    .img-zone{
+      img{
+        width: 100%;
+        height: 350px;
+        object-fit: contain;
+        position: relative;
+      }
+    }
+
+    .img-list{
+      margin-left: -10px;
+      margin-right: -10px;
+      li{
+        width: 100px;
+        height: 100px;
+        padding: 15px 10px;
+        overflow: hidden;
+        img{
+          width: 100px;
+          height: 100%;
+          object-fit: contain;
+          position: relative;
+          cursor: pointer;
+        }
+      }
+    }
+    .name {
       margin-top: 25px;
       font-size: 32px;
       color: $brand;
     }
-    p{
+    p {
       color: $lfont;
     }
-    .detail{
+    .detail {
       padding-top: 25px;
       position: relative;
-      li{
+      li {
         padding-top: 10px;
-        a{
+        a {
           margin-left: 10px;
         }
       }
-      .ct{
+      .ct {
         position: absolute;
         right: 0;
         top: 35px;
         text-align: right;
-        @media(max-width:$xs){
+        @media (max-width: $xs) {
           position: static;
           text-align: left;
           margin-top: 25px;
         }
-        .price{
+        .price {
           font-size: 24px;
           color: $brand;
           margin-bottom: 45px;
-          @media(max-width:$xs){
+          @media (max-width: $xs) {
             margin-bottom: 25px;
           }
         }
 
-        .action-btn{
+        .action-btn {
           background: #fff;
           color: $brand;
           display: table;
@@ -1186,57 +1215,96 @@ hr {
           padding: 10px 25px;
           margin-right: 0;
           margin-left: auto;
-          @media(max-width:$xs){
-           display: inline-block;
-           margin: 5px;
+          @media (max-width: $xs) {
+            display: inline-block;
+            margin: 5px;
           }
-          i{
+          i {
             color: $brand;
           }
         }
       }
     }
   }
-  img{
+  img {
     width: 100%;
   }
 
-  table{
+  table {
     width: 100%;
     margin: 25px auto;
     border-bottom: solid 2px #f7f7f7;
-    tr{
+    tr {
       width: 100%;
-      &:nth-child(odd){
-        td{
+      &:nth-child(odd) {
+        td {
           background: #f7f7f7;
-
         }
       }
 
-      td{
+      td {
         padding: 15px;
         vertical-align: top;
         line-height: 1.55em;
-        &:first-child{
+        &:first-child {
           width: 30%;
         }
       }
     }
   }
 
-  .main-box{
+  .main-box {
     margin-bottom: 45px;
   }
- 
 }
-.flex-box-padding-reduce{
+.flex-box-padding-reduce {
   margin-left: -15px;
   margin-right: -15px;
 }
-.align-center{
+.align-center {
   text-align: center;
-  .action-btn{
+  .action-btn {
     margin: 10px;
+  }
+}
+
+.news-container{
+  max-width: 800px;
+  margin-top: 100px;
+  text-align: left;
+  @media (max-width:$xs) {
+    margin-top: 80px;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  .time{
+    color: $lfont;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .title{
+    font-size: 21px;
+    color: $brand;
+    line-height: 1.45em;
+    margin-bottom: 25px;
+  }
+
+  p{
+    line-height: 1.75em;
+  }
+
+  .action-btn{
+    margin-top: 25px;
+    background: #fff;
+    color: $brand;
+    margin-left: 0;
+    i{
+      color: $brand;
+    }
   }
 }

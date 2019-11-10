@@ -6,8 +6,24 @@ $(document).ready(function () {
     var $header = $('.header');
     var $kv = $('.kv');
     var _wh = $(window).height();
+    var $productLi = $('.product-box li');
+    var $productList = $('.index-product-list .flex-box');
 
-    $kv.css("height",_wh);
+    $('body').imagesLoaded(function(){    
+        var $productListHeight = $productList.height();
+        $('.index-product-list').css("height",$productListHeight);
+        $kv.css("height",_wh);
+    })
+  
+
+    $productLi.click(function(){
+        var _thisindex = $(this).index();
+        $productLi.removeClass('active');
+        $(this).addClass('active');
+        console.log(_thisindex);
+        $productList.removeClass("show");
+        $productList.eq(_thisindex).addClass("show");
+    })
 
     function firstView() {
         var nonScroll = $('.wave-container').hasClass("show");
@@ -20,9 +36,6 @@ $(document).ready(function () {
                 scrollTop: _wh
             }, 400);
         }
-
-       
-
 
         if (_position < 250) {
             $kv.removeClass('fadeOut');
