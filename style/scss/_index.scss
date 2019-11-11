@@ -358,8 +358,29 @@
     opacity: 0;
     transition: all 0.5s;
     width: 100%;
+    pointer-events: none;
     &.show{
       opacity: 1;
+      pointer-events: auto;
     }
+  }
+}
+
+.mij{
+  position: relative;
+  &::after{
+    content: '日本原裝';
+    background: #c0272d;
+    height:50px;
+    width: 50px;
+    padding: 7px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    border-radius:100%;
+    line-height:1.35em ;
+    box-sizing: border-box;
+    font-size: 14px;
   }
 }

@@ -2303,7 +2303,7 @@ h1 { font-size: 32px; }
 .news-box img { width: 100%; }
 .news-box .time { color: #808080; font-size: 14px; }
 .news-box .title { font-size: 21px; }
-.news-box .description { color: #666666; font-size: 17px; }
+.news-box .description { color: #666666; font-size: 17px; min-height: 52px; }
 
 hr { border: none; border-top: solid 1px #ccc; margin: 45px auto; }
 @media (max-width: 767px) { hr { margin: 25px auto; } }
@@ -2495,5 +2495,8 @@ hr { border: none; border-top: solid 1px #ccc; margin: 45px auto; }
   50% { transform: rotate(-1deg); }
   100% { transform: rotate(1deg); } }
 .index-product-list { position: relative; }
-.index-product-list .flex-box { position: absolute; top: 0; left: 0; opacity: 0; transition: all 0.5s; width: 100%; }
-.index-product-list .flex-box.show { opacity: 1; }
+.index-product-list .flex-box { position: absolute; top: 0; left: 0; opacity: 0; transition: all 0.5s; width: 100%; pointer-events: none; }
+.index-product-list .flex-box.show { opacity: 1; pointer-events: auto; }
+
+.mij { position: relative; }
+.mij::after { content: '日本原裝'; background: #c0272d; height: 50px; width: 50px; padding: 7px; position: absolute; top: 0; right: 0; color: #fff; border-radius: 100%; line-height: 1.35em; box-sizing: border-box; font-size: 14px; }

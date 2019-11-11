@@ -192,6 +192,7 @@
                 paddingRight: 40,
                 paddingTop: 10,
                 paddingBottom: 40,
+                fontWeight: "bold",
                 fill : "#466372"
             };
             //console.log(this.DOM.textEl);
