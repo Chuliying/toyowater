@@ -186,7 +186,7 @@
             this.DOM = {el: el};
             this.DOM.textEl = this.DOM.el.querySelector('span.content__text-inner');
             this.style = {
-                family : "Lato ,sans-serif",
+                family : "Noto Sans TC",
                 size : _size,
                 paddingLeft: 40,
                 paddingRight: 40,
@@ -233,7 +233,7 @@
 
     // Preload fonts.
     WebFont.load({
-        google: {families: ['Lato']},
+        google: {families: ['Lato','Noto Sans TC']},
         active: () => [...document.querySelectorAll('[data-blotter]')].forEach((el, pos) => new BlotterEl(el, config[0]))
     });
 
