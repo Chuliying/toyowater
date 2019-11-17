@@ -33,12 +33,14 @@ $(document).ready(function () {
             //$(window).unbind('scroll');
             $('.wave-container, .index-about').addClass('show');
 
-            $body.animate({
-                scrollTop: _wh
-            }, 400);
+            if( _ww > 776){
+                $body.animate({
+                    scrollTop: _wh
+                }, 400);
+            }
         }
 
-        if (_position < 250) {
+        if (_position < 0.5*_wh) {
             $kv.removeClass('fadeOut');
             $header.removeClass('header-bg');
         }
@@ -48,15 +50,15 @@ $(document).ready(function () {
             $header.addClass('header-bg');
         }
 
-        higherWave();
+        //higherWave();
     }
     var $wave = $('.waves');
-    function higherWave(){
-        $wave.addClass('higher');
-        setTimeout(function(){
-            $wave.removeClass('higher');
-        },300)
-    }
+    // function higherWave(){
+    //     $wave.addClass('higher');
+    //     setTimeout(function(){
+    //         $wave.removeClass('higher');
+    //     },300)
+    // }
 
     var $elemental = $('.elemental');
     var $circleInfo = $('.circle-inside').find('li');

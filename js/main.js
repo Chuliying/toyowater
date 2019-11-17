@@ -28,7 +28,8 @@ $( document ).ready(function() {
     var $kv = $('.kv');
     var index = $('#index');
     if(index.length < 1){
-        $waveContainer.addClass("show");
+        setTimeout(function(){$waveContainer.addClass("show");},500)
+        
     }
 
     // function firstView() {
@@ -62,9 +63,9 @@ $( document ).ready(function() {
         else{
             $header.removeClass('header-bg');
         }
-        $wave.addClass('higher');
-        setTimeout(function(){
-            $wave.removeClass('higher');
-        },300)
+        // $wave.addClass('higher');
+        // setTimeout(function(){
+        //     $wave.removeClass('higher');
+        // },300)
     }
 });

@@ -1333,6 +1333,13 @@ hr {
   }
 }
 
-.grid__item-letter{
-  height: 113px;
+.content__text-inner{
+  display: block;
+  font-size: 42px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  height: 103px;
+  @media (max-width:$xs) {
+    font-size: 32px;
+  }
 }

@@ -234,7 +234,7 @@
     // Preload fonts.
     WebFont.load({
         google: {families: ['Lato','Noto Sans TC']},
-        active: () => [...document.querySelectorAll('[data-blotter]')].forEach((el, pos) => new BlotterEl(el, config[0]))
+        active: () => [...document.querySelectorAll('[data-blotter]')].forEach((el, pos) => new BlotterEl(el, config[0])) 
     });
 
     // Preload all the images in the page.
