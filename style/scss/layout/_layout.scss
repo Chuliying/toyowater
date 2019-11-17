@@ -1343,3 +1343,11 @@ hr {
     font-size: 32px;
   }
 }
+
+.grid__item-letter{
+  height: 113px;
+  overflow: hidden;
+  @media (max-width:$xs) {
+    height: 98px;
+  }
+}

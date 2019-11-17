@@ -2408,6 +2408,9 @@ hr { border: none; border-top: solid 1px #ccc; margin: 45px auto; }
 .content__text-inner { display: block; font-size: 42px; padding-top: 10px; padding-bottom: 40px; height: 103px; }
 @media (max-width: 767px) { .content__text-inner { font-size: 32px; } }
 
+.grid__item-letter { height: 113px; overflow: hidden; }
+@media (max-width: 767px) { .grid__item-letter { height: 98px; } }
+
 #hamburger-icon { width: 30px; height: 17px; position: fixed; display: block; right: 40px; top: 40px; z-index: 100; }
 @media (max-width: 767px) { #hamburger-icon { top: 15px; right: 15px; transform: scale(0.85); } }
 #hamburger-icon .line { display: block; background: #535353; width: 30px; height: 3px; position: absolute; left: 0; border-radius: 1.5px; transition: all 0.4s; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; }
