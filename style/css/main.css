@@ -2405,6 +2405,8 @@ hr { border: none; border-top: solid 1px #ccc; margin: 45px auto; }
 .news-container .action-btn { margin-top: 25px; background: #fff; color: #00a680; margin-left: 0; }
 .news-container .action-btn i { color: #00a680; }
 
+.grid__item-letter { height: 113px; }
+
 #hamburger-icon { width: 30px; height: 17px; position: fixed; display: block; right: 40px; top: 40px; z-index: 100; }
 @media (max-width: 767px) { #hamburger-icon { top: 15px; right: 15px; transform: scale(0.85); } }
 #hamburger-icon .line { display: block; background: #535353; width: 30px; height: 3px; position: absolute; left: 0; border-radius: 1.5px; transition: all 0.4s; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; }

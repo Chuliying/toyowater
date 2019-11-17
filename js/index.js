@@ -6,6 +6,7 @@ $(document).ready(function () {
     var $header = $('.header');
     var $kv = $('.kv');
     var _wh = $(window).height();
+    var _ww = $(window).width();
     var $productLi = $('.product-box li');
     var $productList = $('.index-product-list .flex-box');
 
@@ -28,7 +29,7 @@ $(document).ready(function () {
     function firstView() {
         var nonScroll = $('.wave-container').hasClass("show");
         var _position = document.documentElement.scrollTop || document.body.scrollTop;
-        if (!nonScroll && _position<50) {
+        if (!nonScroll && _position< 0.5*_wh) {
             //$(window).unbind('scroll');
             $('.wave-container, .index-about').addClass('show');
 
