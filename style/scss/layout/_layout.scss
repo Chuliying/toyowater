@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
 
 .eng,
 .lato {
@@ -12,7 +12,7 @@
 
 body {
   box-sizing: border-box;
-  font-family: "Noto Sans TC", Microsoft JhengHei, sans-serif;
+  font-family: "Noto Sans TC",  sans-serif;
   color: $font;
 }
 
@@ -834,6 +834,7 @@ hr {
   margin: auto;
   text-align: left;
   margin-bottom: 60px;
+  padding: 15px;
   p {
     font-size: 18px;
     line-height: 1.75em;

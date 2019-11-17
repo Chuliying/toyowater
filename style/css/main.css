@@ -2137,7 +2137,7 @@ ul li { list-style: none; padding: 0; margin: 0; }
 
 * { box-sizing: border-box; }
 
-body { box-sizing: border-box; font-family: "Noto Sans TC", Microsoft JhengHei, sans-serif; color: #666666; }
+body { box-sizing: border-box; font-family: "Noto Sans TC",  sans-serif; color: #666666; }
 
 a { color: #00a680; }
 
@@ -2309,7 +2309,7 @@ h1 { font-size: 32px; }
 hr { border: none; border-top: solid 1px #ccc; margin: 45px auto; }
 @media (max-width: 767px) { hr { margin: 25px auto; } }
 
-.about-first { max-width: 500px; margin: auto; text-align: left; margin-bottom: 60px; }
+.about-first { max-width: 500px; margin: auto; text-align: left; margin-bottom: 60px; padding: 15px; }
 .about-first p { font-size: 18px; line-height: 1.75em; }
 
 .ino-water { margin-top: 60px; }
