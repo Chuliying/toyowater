@@ -2267,7 +2267,8 @@ h1 { font-size: 32px; }
 .product-box img { width: 100%; }
 
 .flex-box { display: flex; flex-flow: row wrap; }
-.flex-box .each-product { padding: 15px; margin: -5px; }
+.flex-box .each-product { padding: 15px; margin: -5px; margin-bottom: 25px; }
+@media (max-width: 767px) { .flex-box .each-product { margin-bottom: 15px; } }
 .flex-box .each-product img { margin-bottom: 45px; max-width: 210px; }
 @media (max-width: 767px) { .flex-box .each-product img { max-width: 160px; } }
 .flex-box .each-product .title { color: #00a680; font-size: 17px; }
