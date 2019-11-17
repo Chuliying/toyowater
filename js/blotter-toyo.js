@@ -186,7 +186,7 @@
             this.DOM = {el: el};
             this.DOM.textEl = this.DOM.el.querySelector('span.content__text-inner');
             this.style = {
-                family : "Noto Sans TC",
+                family : "Noto Sans TC, sans-serif",
                 size : _size,
                 paddingLeft: 40,
                 paddingRight: 40,
