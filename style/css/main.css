@@ -2369,7 +2369,7 @@ hr { border: none; border-top: solid 1px #ccc; margin: 45px auto; }
 .product-container .product-main .img-list { margin-left: -10px; margin-right: -10px; }
 .product-container .product-main .img-list li { width: 100px; height: 100px; padding: 15px 10px; overflow: hidden; }
 .product-container .product-main .img-list li img { width: 100px; height: 100%; object-fit: contain; position: relative; cursor: pointer; }
-.product-container .product-main .name { margin-top: 25px; font-size: 32px; color: #00a680; }
+.product-container .product-main .name { margin-top: 25px; font-size: 32px; color: #00a680; font-weight: bold; }
 .product-container .product-main p { color: #808080; }
 .product-container .product-main .detail { padding-top: 25px; position: relative; min-height: 210px; }
 .product-container .product-main .detail li { max-width: 400px; padding-top: 10px; line-height: 1.75em; padding-left: 1.25em; position: relative; }
