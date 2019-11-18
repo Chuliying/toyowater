@@ -21,7 +21,6 @@ $(document).ready(function () {
         var _thisindex = $(this).index();
         $productLi.removeClass('active');
         $(this).addClass('active');
-        console.log(_thisindex);
         $productList.removeClass("show");
         $productList.eq(_thisindex).addClass("show");
     })
