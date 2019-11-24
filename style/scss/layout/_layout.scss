@@ -329,6 +329,10 @@ h1 {
   padding: 60px 0px;
   color: #fff;
 
+  a{
+    color: #fff;
+  }
+
   @media (max-width: $xs) {
     padding: 45px 0;
   }
