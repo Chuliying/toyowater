@@ -676,6 +676,7 @@ h1 {
     img {
       margin-bottom: 45px;
       max-width: 210px;
+      background: #f9f9f9;
       @media (max-width: $xs) {
         max-width: 160px;
       }
@@ -820,6 +821,9 @@ h1 {
     color: $font;
     font-size: 17px;
     min-height: 52px;
+    >a{
+      color:$brand;
+    }
   }
 }
 
@@ -1183,6 +1187,10 @@ hr {
         }
       }
     }
+    b{
+      color: #326c5a;
+      font-weight: bold;
+    }
     .name {
       margin-top: 25px;
       font-size: 32px;
@@ -1191,11 +1199,17 @@ hr {
     }
     p {
       color: $lfont;
+      max-width: 450px;
     }
     .detail {
       padding-top: 25px;
       position: relative;
       min-height: 210px;
+
+      img{
+        margin: 10px auto;
+      }
+  
       li {
         max-width: 400px;
         padding-top: 10px;
@@ -1316,14 +1330,18 @@ hr {
   }
 
   .title{
-    font-size: 21px;
-    color: $brand;
+    font-size: 24px;
+    color: #00a680;
     line-height: 1.45em;
     margin-bottom: 25px;
+    border-bottom: dashed 1px #ccc;
+    padding-bottom: 15px;
+    font-weight: bold;
   }
 
   p{
     line-height: 1.75em;
+    padding: 0.5em 0;
   }
 
   .action-btn{
@@ -1354,4 +1372,21 @@ hr {
   @media (max-width:$xs) {
     height: 98px;
   }
+}
+
+.img-mobile{
+  display: none;
+  @media (max-width:$xs) {
+    display: block;
+  }
+}
+
+.img-desk{
+  @media (max-width:$xs) {
+    display: none;
+  }
+}
+
+.brand-font{
+  color: $brand;
 }
