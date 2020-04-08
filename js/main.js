@@ -15,12 +15,27 @@ $( document ).ready(function() {
         var _index    = $this.parent().parent().index();
         var $target   = $('.index-container').eq(_index);
         var _position = $target.offset().top;
-        
          
         $body.animate({
             scrollTop: _position - 35
         }, 1000);
     })
+
+    var $productNavLi = $('.product-nav li');
+
+    if ($productNavLi){
+
+        var $productSection = $('.product-box > div');
+
+        $productNavLi.on("click", function(){
+            var $thisIndex = $(this).index();
+            var _position = $productSection.eq($thisIndex).offset().top;
+
+            $body.animate({
+                scrollTop: _position - 65
+            }, 1000);
+        })
+    }
 
     
     var $waveContainer = $('.wave-container');
