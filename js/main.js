@@ -21,7 +21,7 @@ $( document ).ready(function() {
         }, 1000);
     })
 
-    var $productNavLi = $('.product-nav li');
+    //var $productNavLi = $('.product-nav li');
 
     if ($productNavLi){
 

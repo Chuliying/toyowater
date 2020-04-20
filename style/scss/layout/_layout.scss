@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
 .eng,
 .lato {
@@ -12,7 +12,7 @@
 
 body {
   box-sizing: border-box;
-  font-family: "Noto Sans TC",  sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   color: $font;
 }
 
@@ -317,6 +317,9 @@ p {
   }
   .action-btn {
     margin: 25px 10px;
+    @media (max-width: $xs) {
+      margin: 7px auto;
+    }
   }
 }
 
@@ -329,7 +332,7 @@ h1 {
   padding: 60px 0px;
   color: #fff;
 
-  a{
+  a {
     color: #fff;
   }
 
@@ -644,7 +647,7 @@ h1 {
       border-bottom: solid 2px #ccc;
       cursor: pointer;
 
-      @media(max-width:$xs){
+      @media (max-width: $xs) {
         font-size: 16px;
         padding: 10px 5px;
         margin: 10px 5px;
@@ -670,15 +673,16 @@ h1 {
     padding: 15px;
     margin: -5px;
     margin-bottom: 45px;
-    @media (max-width:$xs) {
-      margin-bottom: 15px;
-    } 
+    @media (max-width: $xs) {
+      margin-bottom: 35px !important;
+    }
     img {
       margin-bottom: 25px;
       max-width: 210px;
       background: #f9f9f9;
       @media (max-width: $xs) {
         max-width: 160px;
+        margin-bottom: 15px;
       }
     }
     .title {
@@ -821,8 +825,8 @@ h1 {
     color: $font;
     font-size: 17px;
     min-height: 52px;
-    >a{
-      color:$brand;
+    > a {
+      color: $brand;
     }
   }
 }
@@ -897,12 +901,12 @@ hr {
   margin-top: 60px;
   .flex-2 {
     &:first-child {
-      @media (max-width:$xs) {
+      @media (max-width: $xs) {
         margin-bottom: 0;
       }
       li:nth-child(3) {
         &:after {
-          @media (max-width:$xs) {
+          @media (max-width: $xs) {
             display: block;
           }
         }
@@ -1161,8 +1165,8 @@ hr {
     margin-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
-    .img-zone{
-      img{
+    .img-zone {
+      img {
         width: 100%;
         height: 350px;
         object-fit: contain;
@@ -1170,15 +1174,15 @@ hr {
       }
     }
 
-    .img-list{
+    .img-list {
       margin-left: -10px;
       margin-right: -10px;
-      li{
+      li {
         width: 100px;
-        height: 100px;  
+        height: 100px;
         padding: 15px 10px;
         overflow: hidden;
-        img{
+        img {
           width: 100px;
           height: 100%;
           object-fit: contain;
@@ -1187,7 +1191,7 @@ hr {
         }
       }
     }
-    b{
+    b {
       color: #326c5a;
       font-weight: bold;
     }
@@ -1206,11 +1210,11 @@ hr {
       position: relative;
       min-height: 210px;
 
-      img{
+      img {
         margin: 10px auto;
       }
-      
-      h4{
+
+      h4 {
         padding-top: 25px;
         font-size: 21px;
         text-align: center;
@@ -1226,7 +1230,7 @@ hr {
         line-height: 1.75em;
         padding-left: 1.25em;
         position: relative;
-        &::before{
+        &::before {
           position: absolute;
           left: 0;
           content: "";
@@ -1321,26 +1325,26 @@ hr {
   }
 }
 
-.news-container{
+.news-container {
   max-width: 800px;
   margin-top: 100px;
   text-align: left;
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     margin-top: 80px;
   }
 
-  img{
+  img {
     width: 100%;
   }
 
-  .time{
+  .time {
     color: $lfont;
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 5px;
   }
 
-  .title{
+  .title {
     font-size: 24px;
     color: #00a680;
     line-height: 1.45em;
@@ -1350,100 +1354,98 @@ hr {
     font-weight: bold;
   }
 
-  p{
+  p {
     line-height: 1.75em;
     padding: 0.5em 0;
   }
 
-  .action-btn{
+  .action-btn {
     margin-top: 25px;
     background: #fff;
     color: $brand;
     margin-left: 0;
-    i{
+    i {
       color: $brand;
     }
   }
 }
 
-.content__text-inner{
+.content__text-inner {
   display: block;
   font-size: 42px;
   padding-top: 10px;
   padding-bottom: 40px;
   height: 103px;
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     font-size: 32px;
   }
 }
 
-.grid__item-letter{
+.grid__item-letter {
   height: 113px;
   overflow: hidden;
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     height: 98px;
   }
 }
 
-.img-mobile{
+.img-mobile {
   display: none;
-  @media (max-width:$xs) {
+  @media (max-width: $xs) {
     display: block;
   }
 }
 
-.img-desk{
-  @media (max-width:$xs) {
+.img-desk {
+  @media (max-width: $xs) {
     display: none;
   }
 }
 
-.brand-font{
+.brand-font {
   color: $brand;
 }
 
-.product-nav{
+.product-nav {
   margin-bottom: 60px;
 
   @media (max-width: $xs) {
     margin-bottom: 35px;
   }
-  ul{
-    li{
-      display: inline-block;
-      border: solid 2px $action;
-      background: transparent;
-      color: $action;
-      display: inline-block;
-      letter-spacing: 1px;
-      border-radius: 35px;
-      padding: 15px 35px;
-      text-align: center;
-      transition: all 0.35s;  
-      margin: 5px;
-      cursor: pointer;
-    
-      @media (max-width: $xs) {
-        padding: 5px 7px;
-        font-size: 12px;
-        margin: 5px 3px;
-      }
-      &:hover {
-        background: $action;
-        color: #fff;
-        i {
-          color: #fff;
-        }
-      }
+  li {
+    display: inline-block;
+    border: solid 2px $action;
+    background: transparent;
+    color: $action;
+    display: inline-block;
+    letter-spacing: 1px;
+    border-radius: 35px;
+    padding: 12px 25px;
+    text-align: center;
+    transition: all 0.35s;
+    margin: 5px;
+    cursor: pointer;
+
+    @media (max-width: $xs) {
+      padding: 5px 7px;
+      font-size: 12px;
+      margin: 5px 3px;
+    }
+    &:hover {
+      background: $action;
+      color: #fff;
       i {
         color: #fff;
-        margin-right: 10px;
-        transition: all 0.35s;
       }
+    }
+    i {
+      color: #fff;
+      margin-right: 10px;
+      transition: all 0.35s;
     }
   }
 }
 
-iframe{
+iframe {
   margin: 25px auto;
 }
