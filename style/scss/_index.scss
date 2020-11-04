@@ -366,7 +366,7 @@
   }
 }
 
-.mij{
+.mij,.new,.new-s{
   position: relative;
   &::after{
     content: '日本原裝';
@@ -383,5 +383,20 @@
     line-height:1.35em ;
     box-sizing: border-box;
     font-size: 14px;
+  }
+}
+
+.new,.new-s{
+  &::after{
+    content: '新品登場';
+    background: $dblue;
+  }
+}
+
+
+.new-s{
+  &::after{
+    content: '旗艦新品';
+    background: $dblue;
   }
 }

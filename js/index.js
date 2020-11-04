@@ -10,9 +10,14 @@ $(document).ready(function () {
     var $productLi = $('.product-box li');
     var $productList = $('.index-product-list .flex-box');
 
-    $('body').imagesLoaded(function(){    
-        var $productListHeight = $productList.height();
-        $('.index-product-list').css("height",$productListHeight);
+    $('body').imagesLoaded(function(){  
+        let _heightValue = [];  
+        $productList.each(function(){
+            let _h =  $(this).height();
+            _heightValue.push(_h);
+        });
+        const _heightest = Math.max(..._heightValue);
+        $('.index-product-list').css("height",_heightest);
         $kv.css("height",_wh);
     })
   

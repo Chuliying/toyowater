@@ -23,19 +23,19 @@ $( document ).ready(function() {
 
     //var $productNavLi = $('.product-nav li');
 
-    if ($productNavLi){
+    // if ($productNavLi){
 
-        var $productSection = $('.product-box > div');
+    //     var $productSection = $('.product-box > div');
 
-        $productNavLi.on("click", function(){
-            var $thisIndex = $(this).index();
-            var _position = $productSection.eq($thisIndex).offset().top;
+    //     $productNavLi.on("click", function(){
+    //         var $thisIndex = $(this).index();
+    //         var _position = $productSection.eq($thisIndex).offset().top;
 
-            $body.animate({
-                scrollTop: _position - 65
-            }, 1000);
-        })
-    }
+    //         $body.animate({
+    //             scrollTop: _position - 65
+    //         }, 1000);
+    //     })
+    // }
 
     
     var $waveContainer = $('.wave-container');
